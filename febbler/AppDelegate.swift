@@ -8,14 +8,59 @@
 
 import UIKit
 import CoreData
-
+import Firebase
+import GoogleSignIn
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate,GIDSignInDelegate{
+    func sign(_ signIn: GIDSignIn!, didSignInFor user: GIDGoogleUser!, withError error: Error!) {
+      
+          if let error = error {
+          print(error.localizedDescription)
+          return
+          }
+          guard let auth = user.authentication else { return }
+          let credentials = GoogleAuthProvider.credential(withIDToken: auth.idToken, accessToken: auth.accessToken)
+          Auth.auth().signIn(with: credentials) { (authResult, error) in
+          if let error = error {
+          print(error.localizedDescription)
+          }
+//
+//             print("login successful")
+//          //This is where you should add the functionality of successful login
+//             let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//                       let ProfVC = storyboard.instantiateViewController(withIdentifier: "ProfileVC") as! ProfileVC
+//                     let profileName = user.profile.name
+//                     guard let name = profileName else {return}
+//                     ProfVC.profileNames = name
+//                     let imageURl = user.profile.imageURL(withDimension: .min)!
+//                     let data = try? Data(contentsOf: imageURl)
+//                     guard let imageData = data else{
+//                         return
+//                     }
+//                     let profileImage = UIImage(data: imageData)
+//                     if let Image = profileImage{
+//
+//                              ProfVC.profileImages = Image
+//                     }
+//
+//                       self.present(ProfVC, animated: false, completion: nil)
+             
+          //i.e. dismissing this view or push the home view controller etc
+        }
+     }
+        func sign(_ signIn: GIDSignIn!, didDisconnectWith user: GIDGoogleUser!, withError error: Error!) {
+               if error != nil {
+                   print(error.localizedDescription)
+                    }
+                 
+              // self.navigationController?.dismiss(animated: true, completion: nil)
+                
+            }
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        FirebaseApp.configure()
+         GIDSignIn.sharedInstance().clientID = "83912801371-qtv2k6l71darhphmmjsmlnqc7au3ml8s.apps.googleusercontent.com"
+          GIDSignIn.sharedInstance()?.delegate = self
         return true
     }
 
@@ -35,7 +80,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     // MARK: - Core Data stack
 
-    lazy var persistentContainer: NSPersistentContainer = {
+        var persistentContainer: NSPersistentContainer = {
         /*
          The persistent container for the application. This implementation
          creates and returns a container, having loaded the store for the

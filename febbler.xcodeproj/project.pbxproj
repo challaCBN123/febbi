@@ -3,29 +3,59 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FAEE39CEB6B8F3A0425C8D1 /* Pods_febbler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F83C01AD61AF9D6C7833741A /* Pods_febbler.framework */; };
 		C45083172508919D0038BD91 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45083162508919D0038BD91 /* AppDelegate.swift */; };
 		C45083192508919D0038BD91 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45083182508919D0038BD91 /* SceneDelegate.swift */; };
-		C450831B2508919D0038BD91 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450831A2508919D0038BD91 /* ViewController.swift */; };
 		C450831E2508919D0038BD91 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C450831C2508919D0038BD91 /* Main.storyboard */; };
 		C45083212508919D0038BD91 /* febbler.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C450831F2508919D0038BD91 /* febbler.xcdatamodeld */; };
 		C4508323250891B30038BD91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4508322250891B30038BD91 /* Assets.xcassets */; };
 		C4508326250891B30038BD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4508324250891B30038BD91 /* LaunchScreen.storyboard */; };
+		C450832E25089A440038BD91 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = C450832D25089A440038BD91 /* GoogleService-Info.plist */; };
+		C450833025089B760038BD91 /* utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450832F25089B760038BD91 /* utilities.swift */; };
+		C450833225089B860038BD91 /* BaseServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833125089B860038BD91 /* BaseServices.swift */; };
+		C450833425089B8E0038BD91 /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833325089B8D0038BD91 /* PlayerView.swift */; };
+		C450834025089BC30038BD91 /* videosCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C450833725089BBF0038BD91 /* videosCell.xib */; };
+		C450834125089BC30038BD91 /* videosCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833825089BC00038BD91 /* videosCell.swift */; };
+		C450834225089BC30038BD91 /* messageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833925089BC00038BD91 /* messageVC.swift */; };
+		C450834325089BC30038BD91 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833A25089BC00038BD91 /* ProfileVC.swift */; };
+		C450834425089BC30038BD91 /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833B25089BC10038BD91 /* NotificationVC.swift */; };
+		C450834525089BC30038BD91 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833C25089BC10038BD91 /* LoginVC.swift */; };
+		C450834625089BC30038BD91 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833D25089BC10038BD91 /* HomeVC.swift */; };
+		C450834725089BC30038BD91 /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833E25089BC20038BD91 /* SearchVC.swift */; };
+		C450834825089BC30038BD91 /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C450833F25089BC20038BD91 /* CameraVC.swift */; };
+		C45F41C325093BC3009552B2 /* keyBoardHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C45F41C225093BC2009552B2 /* keyBoardHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38631DFE36D67D12C438076D /* Pods-febbler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-febbler.release.xcconfig"; path = "Target Support Files/Pods-febbler/Pods-febbler.release.xcconfig"; sourceTree = "<group>"; };
+		C20E6DD32B4FDFD92128CB60 /* Pods-febbler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-febbler.debug.xcconfig"; path = "Target Support Files/Pods-febbler/Pods-febbler.debug.xcconfig"; sourceTree = "<group>"; };
 		C45083132508919C0038BD91 /* febbler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = febbler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45083162508919D0038BD91 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C45083182508919D0038BD91 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C450831A2508919D0038BD91 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C450831D2508919D0038BD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C45083202508919D0038BD91 /* febbler.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = febbler.xcdatamodel; sourceTree = "<group>"; };
 		C4508322250891B30038BD91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4508325250891B30038BD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C4508327250891B30038BD91 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C450832D25089A440038BD91 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C450832F25089B760038BD91 /* utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = utilities.swift; sourceTree = "<group>"; };
+		C450833125089B860038BD91 /* BaseServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseServices.swift; sourceTree = "<group>"; };
+		C450833325089B8D0038BD91 /* PlayerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		C450833725089BBF0038BD91 /* videosCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = videosCell.xib; sourceTree = "<group>"; };
+		C450833825089BC00038BD91 /* videosCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = videosCell.swift; sourceTree = "<group>"; };
+		C450833925089BC00038BD91 /* messageVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = messageVC.swift; sourceTree = "<group>"; };
+		C450833A25089BC00038BD91 /* ProfileVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		C450833B25089BC10038BD91 /* NotificationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		C450833C25089BC10038BD91 /* LoginVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		C450833D25089BC10038BD91 /* HomeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		C450833E25089BC20038BD91 /* SearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		C450833F25089BC20038BD91 /* CameraVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
+		C45F41C225093BC2009552B2 /* keyBoardHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = keyBoardHelpers.swift; sourceTree = "<group>"; };
+		F83C01AD61AF9D6C7833741A /* Pods_febbler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_febbler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +63,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FAEE39CEB6B8F3A0425C8D1 /* Pods_febbler.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B8C92275CE2147DA058B0863 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F83C01AD61AF9D6C7833741A /* Pods_febbler.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C450830A2508919C0038BD91 = {
 			isa = PBXGroup;
 			children = (
 				C45083152508919C0038BD91 /* febbler */,
 				C45083142508919C0038BD91 /* Products */,
+				D5F0A414C0749F9F37891BA4 /* Pods */,
+				B8C92275CE2147DA058B0863 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,14 +101,44 @@
 			children = (
 				C45083162508919D0038BD91 /* AppDelegate.swift */,
 				C45083182508919D0038BD91 /* SceneDelegate.swift */,
-				C450831A2508919D0038BD91 /* ViewController.swift */,
+				C450832F25089B760038BD91 /* utilities.swift */,
+				C45F41C225093BC2009552B2 /* keyBoardHelpers.swift */,
+				C450833125089B860038BD91 /* BaseServices.swift */,
+				C450833325089B8D0038BD91 /* PlayerView.swift */,
+				C45083492508B62C0038BD91 /* Controllers */,
 				C450831C2508919D0038BD91 /* Main.storyboard */,
 				C4508322250891B30038BD91 /* Assets.xcassets */,
 				C4508324250891B30038BD91 /* LaunchScreen.storyboard */,
 				C4508327250891B30038BD91 /* Info.plist */,
+				C450832D25089A440038BD91 /* GoogleService-Info.plist */,
 				C450831F2508919D0038BD91 /* febbler.xcdatamodeld */,
 			);
 			path = febbler;
+			sourceTree = "<group>";
+		};
+		C45083492508B62C0038BD91 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C450833D25089BC10038BD91 /* HomeVC.swift */,
+				C450833825089BC00038BD91 /* videosCell.swift */,
+				C450833725089BBF0038BD91 /* videosCell.xib */,
+				C450833925089BC00038BD91 /* messageVC.swift */,
+				C450833F25089BC20038BD91 /* CameraVC.swift */,
+				C450833E25089BC20038BD91 /* SearchVC.swift */,
+				C450833B25089BC10038BD91 /* NotificationVC.swift */,
+				C450833C25089BC10038BD91 /* LoginVC.swift */,
+				C450833A25089BC00038BD91 /* ProfileVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D5F0A414C0749F9F37891BA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C20E6DD32B4FDFD92128CB60 /* Pods-febbler.debug.xcconfig */,
+				38631DFE36D67D12C438076D /* Pods-febbler.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +148,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C450832A250891B30038BD91 /* Build configuration list for PBXNativeTarget "febbler" */;
 			buildPhases = (
+				DF8BA4491F63E70922B4FA35 /* [CP] Check Pods Manifest.lock */,
 				C450830F2508919C0038BD91 /* Sources */,
 				C45083102508919C0038BD91 /* Frameworks */,
 				C45083112508919C0038BD91 /* Resources */,
+				553727DEF0AE532F388FA77A /* [CP] Embed Pods Frameworks */,
+				CC53895C20E70E610A79B2AF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -128,7 +202,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C450834025089BC30038BD91 /* videosCell.xib in Resources */,
 				C4508326250891B30038BD91 /* LaunchScreen.storyboard in Resources */,
+				C450832E25089A440038BD91 /* GoogleService-Info.plist in Resources */,
 				C4508323250891B30038BD91 /* Assets.xcassets in Resources */,
 				C450831E2508919D0038BD91 /* Main.storyboard in Resources */,
 			);
@@ -136,15 +212,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		553727DEF0AE532F388FA77A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CC53895C20E70E610A79B2AF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-febbler/Pods-febbler-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF8BA4491F63E70922B4FA35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-febbler-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C450830F2508919C0038BD91 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C450831B2508919D0038BD91 /* ViewController.swift in Sources */,
+				C450834325089BC30038BD91 /* ProfileVC.swift in Sources */,
+				C450834525089BC30038BD91 /* LoginVC.swift in Sources */,
+				C450833025089B760038BD91 /* utilities.swift in Sources */,
+				C450834625089BC30038BD91 /* HomeVC.swift in Sources */,
+				C450834225089BC30038BD91 /* messageVC.swift in Sources */,
+				C45F41C325093BC3009552B2 /* keyBoardHelpers.swift in Sources */,
+				C450834725089BC30038BD91 /* SearchVC.swift in Sources */,
+				C450834825089BC30038BD91 /* CameraVC.swift in Sources */,
+				C450833425089B8E0038BD91 /* PlayerView.swift in Sources */,
+				C450833225089B860038BD91 /* BaseServices.swift in Sources */,
 				C45083172508919D0038BD91 /* AppDelegate.swift in Sources */,
+				C450834125089BC30038BD91 /* videosCell.swift in Sources */,
 				C45083212508919D0038BD91 /* febbler.xcdatamodeld in Sources */,
 				C45083192508919D0038BD91 /* SceneDelegate.swift in Sources */,
+				C450834425089BC30038BD91 /* NotificationVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +432,7 @@
 		};
 		C450832B250891B30038BD91 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20E6DD32B4FDFD92128CB60 /* Pods-febbler.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -303,6 +450,7 @@
 		};
 		C450832C250891B30038BD91 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 38631DFE36D67D12C438076D /* Pods-febbler.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
